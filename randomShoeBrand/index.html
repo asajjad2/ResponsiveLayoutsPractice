@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
-    <title>xyz</title>
+    <title>RandomShoeBrand</title>
 </head>
 <body>
 
@@ -91,6 +91,27 @@
         </section>
 
     </main>
+
+    <script>
+        
+        const menu = document.querySelector(".menu");
+        const close = document.querySelector(".close");
+        const nav = document.querySelector("nav");
+
+        menu.addEventListener("click",function(){
+            nav.classList.add("open-nav");
+        })
+
+        close.addEventListener("click",function(){
+            nav.classList.remove("open-nav");
+        })
+
+
+
+
+    </script>
     
 </body>
+
+
 </html>

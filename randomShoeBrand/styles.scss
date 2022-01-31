@@ -80,17 +80,24 @@ header{
     }
 
     svg{
-        width: 3em;
+        width: 2.3em;
         margin: -0.6em 0 0 0;
         cursor: pointer;
     }
 }
 
 
+.open-nav{
+    transform: translateX(0);
+}
+
 section.hero{
 
     color: white;
     height: 90vh;
+
+    animation: moveDown 1s ease-in-out forwards;
+    opacity: 0;
 
     h1{
         font-size: 3rem;
@@ -283,4 +290,17 @@ section.moreInfo{
     to{
         transform: translateY(0px);
     }
+}
+
+@keyframes moveDown {
+    
+    from{
+        transform: translateY(-100px);
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
 }
