@@ -112,7 +112,7 @@ section.hero{
     .down-arrow{
         stroke: white;
         position: absolute;
-        bottom: 2em;
+        bottom: 8em;
         width: 1em;
 
         animation: moveArrow 1s alternate-reverse infinite;
@@ -147,7 +147,7 @@ section.moreInfo{
     
     body{
 
-        margin: 1.5em 5em; //relative unit - preferred with margin and padding - 1em = fontsize
+        margin: 1.5em; //relative unit - preferred with margin and padding - 1em = fontsize
         font-family: 'Poppins', sans-serif;
     
     }
@@ -284,11 +284,11 @@ section.moreInfo{
 
 @keyframes moveArrow {
     from{
-        transform: translateY(15px);
+        transform: translateY(0px);
     }
 
     to{
-        transform: translateY(0px);
+        transform: translateY(15px);
     }
 }
 

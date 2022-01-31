@@ -108,7 +108,7 @@ section.hero .subhead {
 section.hero .down-arrow {
   stroke: white;
   position: absolute;
-  bottom: 2em;
+  bottom: 8em;
   width: 1em;
   animation: moveArrow 1s alternate-reverse infinite;
 }
@@ -135,7 +135,7 @@ section.moreInfo .text {
 
 @media only screen and (min-width: 680px) {
   body {
-    margin: 1.5em 5em;
+    margin: 1.5em;
     font-family: 'Poppins', sans-serif;
   }
 }
@@ -258,23 +258,23 @@ section.moreInfo .text {
 
 @-webkit-keyframes moveArrow {
   from {
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
-  }
-  to {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
   }
 }
 
 @keyframes moveArrow {
   from {
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
-  }
-  to {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
   }
 }
 
