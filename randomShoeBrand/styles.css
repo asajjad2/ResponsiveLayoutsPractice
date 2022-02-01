@@ -202,7 +202,7 @@ section.moreInfo .text {
     -ms-grid-columns: (auto)[2];
         grid-template-columns: repeat(2, auto);
     gap: 3em;
-    margin-bottom: 8em;
+    margin-bottom: 6em;
   }
   .feature img {
     width: 25em;
@@ -210,6 +210,8 @@ section.moreInfo .text {
   .feature .content {
     text-align: right;
     width: 25em;
+    -ms-grid-column-align: right;
+        justify-self: right;
   }
   .feature.flipped {
         grid-template-areas: "left right";
