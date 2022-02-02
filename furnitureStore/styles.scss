@@ -1,0 +1,83 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.6;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container{
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+.spacing > * + *{
+    margin-top: var(--spacer,2rem);
+}
+
+.btn{
+
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em 1.25em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    border-radius: 0.25em;
+    background-color: var(--clr-accent,blue);
+    color: var(--clr-text,#fff);
+    transition: transform 250ms ease-in-out,
+    opacity 250ms linear;
+
+}
+
+.btn:hover,.btn:focus{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.primary-heading{
+    font-size: 4rem;
+    font-size: clamp(3rem,calc(5vw + 1rem),4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.hero{
+
+    color: white;
+    text-align: center;
+    padding: 7em 0;
+    background-image: url("assets/bg-furniture.jpg");
+    background-size: cover;
+    background-position: center;
+
+    background-color: rgba(10, 7, 3, 0.5); /* Tint color */
+    background-blend-mode: multiply;
+
+}
+
+section{
+    padding: 7em 0;
+}
+
+.featured{
+
+
+
+    .section-title{
+        text-align: center;
+        font-size: clamp(2.5rem, calc(5vw + 1rem),4rem);
+    }
+
+} 
