@@ -167,10 +167,11 @@ section{
             font-size: 4rem;
             color: #fff;
             text-transform: uppercase;
+            font-size: clamp(3rem,calc(5vw+1rem),5.5rem);
         }
 
         &-img{
-            margin: -5em 0 0 0;
+            margin: -5em auto 0 auto;
         }
 
         @media (min-width: 45em) {
